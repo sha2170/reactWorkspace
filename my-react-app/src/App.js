@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"; // rsf탭
+import Welcome from "./Componets/Welcome";
+import Clock from "./Componets/Clock";
+import Counter from "./Componets/Counter";
+import RandomNumber from "./Componets/RandomNumber";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>React 기본 예제</h1>
+      <Welcome name="Sara" />
+      <Welcome name="홍길동" />
+      <hr />
+      <Clock />
+      <hr />
+      <Counter />
+      <hr />
+      <RandomNumber /> {/* RandomNumber 컴포넌트 추가 */}
     </div>
   );
 }
+
 
 export default App;
